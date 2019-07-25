@@ -17,10 +17,10 @@ stages {
     }
   }
 stages {
-    stage('Deployment Stage'){
+    stage('Build Stage'){
       steps {
         withMaven(maven : 'maven_3.3.9'){
-            sh 'mvn deploy'
+            sh 'mvn clean package'
       }
     }
   }
