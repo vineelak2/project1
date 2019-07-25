@@ -17,7 +17,7 @@ stages {
     }
   }
 stages {
-    stage(Deployment Stage') {
+    stage('Deployment Stage'){
       steps {
         withMaven(maven : 'maven_3.3.9'){
             sh 'mvn deploy'
